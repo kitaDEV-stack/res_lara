@@ -10,11 +10,13 @@ use App\Rules\DateBetween;
 use App\Rules\TimeBetween;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ReservationController extends Controller
 {
     public function stepOne(Request $request)
     {
+        Session::put('active','reservations.step-one');
         $reservation = $request->session()->get('reservation');
         $min_date = Carbon::today();
         $max_date = Carbon::now()->addWeek();

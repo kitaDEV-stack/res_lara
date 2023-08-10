@@ -12,7 +12,7 @@
                     <div class="flex flex-col justify-center">
                         <h1
                             class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                            Laravel Restaurant <span class="text-blue-600">Admin</span> Login</h1>
+                            Laravel Restaurant <span class="text-purple-700">Admin</span> Login</h1>
                         <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium facere hic ea illo
                             corporis deserunt perspiciatis eaque non nesciunt maiores in architecto impedit harum voluptate
@@ -32,7 +32,7 @@
                                         email</label>
                                     <input type="email" name="email" :value="__('Email')" id="email"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="name@company.com" required>
+                                        placeholder="name@company.com" >
                                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                                 </div>
                                 <div>
@@ -42,7 +42,7 @@
                                     <input type="password" name="password" :value="__('Password')" id="password"
                                         placeholder="••••••••"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        required>
+                                        >
                                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
                                 </div>
                                 <div class="block mt-4">
@@ -64,11 +64,11 @@
                             @endauth
             @endif
             <button type="submit"
-                class="w-full px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{{ __('Log in') }}</button>
+                class="w-full px-5 py-3 text-base font-medium text-center text-white bg-black rounded-lg hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{{ __('Log in') }}</button>
             @if (Route::has('register'))
                 <div class="text-sm font-medium text-gray-900 dark:text-white">
                     Not registered yet? <a href="{{ route('register') }}"
-                        class="text-blue-600 hover:underline dark:text-blue-500">Create account</a>
+                        class="text-purple-700 hover:underline dark:text-blue-500">Create account</a>
                 </div>
             @endif
             </form>

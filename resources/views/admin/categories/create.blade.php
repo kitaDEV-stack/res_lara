@@ -30,7 +30,7 @@
                 <div class="mb-3">
                     <x-input-label for="description" :value="__('Description')" />
                     <textarea id="description" rows="4"
-                        class="block p-2.5 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                        class="block p-2.5 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" maxlength="50"
                         type="text" name="description" :value="old('description')" required autofocus autocomplete="description"></textarea>
                     <x-input-error :messages="$errors->get('description')" class="mt-2" />
                 </div>
