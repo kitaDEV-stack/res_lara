@@ -111,6 +111,7 @@
                 @endif
             </div>
             <h1 class="flex items-center justify-center text-5xl font-extrabold dark:text-white">Admin Dashboard<span class="bg-black text-gray-300 text-2xl font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">Laravel</span></h1>
+            {{$slot}}
         </main>
     </div>
 </body>
